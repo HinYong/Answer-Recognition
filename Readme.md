@@ -1,6 +1,3 @@
-new_answer.zip为测试上传所用的压缩包；
-
-python部分：
 answer_recognition文件夹是python工程文件夹，打开后根据提示需要安装相应的库；
 loop_detection.py用于遍历识别文件夹中的答题卡图像；
 EMNIST_letters_extract.py用于提取数据集；
@@ -11,11 +8,6 @@ train_ft.py用于训练检测ft的模型；
 test_acc.py用于检测模型的准确率；
 rect_data文件夹下存放测试用的答题卡；
 processed_data文件夹下存放经过矫正处理后的答题卡；
-
-数据库创建与初始化：需要先运行createdatabase.sql在本地完成数据库的创建；
-
-java部分：
-project files文件夹是java工程文件夹，用IDEA打开后运行LmsSpringServerApplication，用教师账号进行登录，进入“考试信息”页面，输入选择题标准答案以及判断题标准答案，并且选择压缩文件new_answer.zip，点击上传，识别完成后能够下载csv文件。
 
 用例说明：
 标准答案： 选择题：BACBDACDBC     判断题：TFTTF
