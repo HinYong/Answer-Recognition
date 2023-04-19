@@ -1,4 +1,3 @@
-answer_recognition文件夹是python工程文件夹，打开后根据提示需要安装相应的库；
 loop_detection.py用于遍历识别文件夹中的答题卡图像；
 EMNIST_letters_extract.py用于提取数据集；
 image_process.py用于透视变换进行图像的矫正；
