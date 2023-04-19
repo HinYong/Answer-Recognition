@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title id="title"></title>
+    <link rel="stylesheet" href="../pure-release-1.0.0/pure.css">
+    <link rel="stylesheet" href="../ProjectCSS.css">
+    <link rel="stylesheet" href="../course/assignment.css">
+    <script type="text/javascript" src="../myFunction/getConfig.js"></script>
+    <script type="text/javascript" src="assignmentManage.js"></script>
+</head>
+<body>
+    <div class="mainContent">
+        <form class="pure-form pure-form-aligned" id="assignmentInformation">
+            <fieldset>
+                <legend>作业信息</legend>
+                <div class="pure-control-group">
+                    <label for="assignmentName">作业名：</label>
+                    <input id="assignmentName" type="text">
+                </div>
+                <div class="pure-control-group">
+                    <label for="weight">权重：</label>
+                    <input id="weight" type="text">
+                </div>
+                <div class="pure-control-group">
+                    <label for="startTime">发布时间</label>
+                    <input id="startTime" type="datetime-local">
+                </div>
+                <div class="pure-control-group">
+                    <label for="endTime">截止时间</label>
+                    <input id="endTime" type="datetime-local">
+                </div>
+            </fieldset>
+        </form>
+        <form class="pure-form pure-form-aligned" id="questionList"></form>
+        <div>
+            <button class="pure-button greenButton" onclick="newChoiceQuestion()">新增选择题</button>
+            <button class="pure-button greenButton" onclick="newCompletionQuestion()">新增填空题</button>
+<!--            <button class="pure-button" onclick="newShortAnswerQuestion()">新增简答题</button>-->
+<!--            <button class="pure-button" onclick="newFileQuestion()">新增上传题</button>-->
+        </div>
+        <button type="button" class="pure-button pure-button-primary submitButton" onclick="update();return false;">保存</button>
+        <button type="button" class="pure-button submitButton" onclick="moveToList()">返回</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+textarea{
+    width: 100%;
+    height: 8em;
+}
+
+.submitButton{
+    margin: 5em auto;
+}

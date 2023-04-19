@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="../pure-release-1.0.0/pure.css">
+    <link rel="stylesheet" href="../ProjectCSS.css">
+    <script type="text/javascript" src="../myFunction/getConfig.js"></script>
+    <script type="text/javascript" src="register.js"></script>
+</head>
+<body>
+    <div class="mainContent">
+        <form class="pure-form pure-form-aligned">
+            <fieldset>
+                <legend>用户注册</legend>
+                <div class="pure-control-group">
+                    <label for="username">用户名：</label>
+                    <input id="username" type="text" required>
+                </div>
+                <div class="pure-control-group">
+                    <label for="password">密码：</label>
+                    <input id="password" type="password" required>
+                </div>
+                <div class="pure-control-group">
+                    <label for="rePassword">重复密码：</label>
+                    <input id="rePassword" type="password" required>
+                </div>
+                <div class="pure-control-group">
+                    <label for="role">身份：</label>
+                    <select id="role" style="padding: 0 0.6em">
+                        <option>学生</option>
+                        <option>教师</option>
+                    </select>
+                </div>
+                <div class="pure-controls">
+                    <button type="submit" class="pure-button pure-button-primary" onclick="register();return false;">注册</button>
+                </div>
+            </fieldset>
+        </form>
+        <p id="message"></p>
+    </div>
+</body>
+</html>

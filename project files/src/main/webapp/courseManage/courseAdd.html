@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>新增课程</title>
+    <link rel="stylesheet" href="../pure-release-1.0.0/pure.css">
+    <link rel="stylesheet" href="../ProjectCSS.css">
+    <script type="text/javascript" src="../myFunction/getConfig.js"></script>
+    <script type="text/javascript" src="courseAdd.js"></script>
+</head>
+<body>
+    <div class="pure-menu pure-menu-horizontal topMenu">
+        <a href="../course/courseList.html" class="pure-menu-heading pure-menu-link">课程列表</a>
+    </div>
+    <div class="mainContent">
+        <h1>新增课程</h1>
+        <form class="pure-form pure-form-aligned">
+            <fieldset>
+                <div class="pure-control-group">
+                    <label for="courseName">课程名称：</label>
+                    <input id="courseName" type="text">
+                </div>
+                <div class="pure-control-group">
+                    <label for="startDate">开始日期：</label>
+                    <input id="startDate" type="date">
+                </div>
+                <div class="pure-control-group">
+                    <label for="endDate">结束日期：</label>
+                    <input id="endDate" type="date">
+                </div>
+                <div class="pure-control-group">
+                    <label for="joinMode">加入方式：</label>
+                    <select id="joinMode" style="padding: 0 0.6em">
+                        <option>仅允许主讲教师导入学生名单</option>
+                        <option>仅允许本校学生添加</option>
+                        <option>允许任何人通过课程号添加</option>
+                    </select>
+                </div>
+                <div class="pure-controls">
+                    <button type="button" class="pure-button pure-button-primary" onclick="addCourse();return false;">新增</button>
+                </div>
+                <p id="message"></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

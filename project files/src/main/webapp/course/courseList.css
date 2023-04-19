@@ -1,0 +1,24 @@
+table,td,th{
+    border-color: black;
+    border-inline-color: black;
+}
+
+table{
+    width: 100%;
+}
+
+.courseName{
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.teacher{
+    color: dimgrey;
+    width: 100%;
+    text-align: center;
+}
+
+.button{
+    width: 10%;
+}

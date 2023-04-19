@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>学生管理</title>
+    <link rel="stylesheet" href="../pure-release-1.0.0/pure.css">
+    <link rel="stylesheet" href="../ProjectCSS.css">
+    <link rel="stylesheet" href="studentManage.css">
+    <script type="text/javascript" src="../myFunction/getConfig.js"></script>
+    <script type="text/javascript" src="studentManage.js"></script>
+</head>
+<body>
+    <div id="topMenu"></div>
+    <div class="mainContent">
+        <h1>学生信息管理</h1>
+
+<!--        <form class="pure-form pure-form-aligned" id="studentUsername">-->
+<!--            <label for="student">学生用户名：</label>-->
+<!--            <input id="student" type="text">-->
+<!--        </form>-->
+<!--        <button type="button" class="pure-button pure-button-primary setSpread" onclick="">导入学生</button>-->
+
+        <table class="pure-table pure-table-striped">
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>用户名</th>
+                    <th>学校</th>
+                    <th>学号</th>
+                    <th>院系</th>
+                    <th>班级</th>
+                    <th>成绩</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="studentList">
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

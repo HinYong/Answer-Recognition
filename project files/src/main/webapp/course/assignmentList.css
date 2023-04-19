@@ -1,0 +1,32 @@
+table{
+    width: 100%;
+    /*background-color: white;*/
+}
+
+.assignmentTitle{
+    font-size: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    /*width: 90%;*/
+}
+
+.assignmentInformation{
+    font-size: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #333333;
+    /*width: 90%;*/
+}
+
+.assignmentLink{
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.deleteLink{
+    background-color: #0078e7;
+}

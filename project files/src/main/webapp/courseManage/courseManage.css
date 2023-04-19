@@ -1,0 +1,9 @@
+.titleLink{
+    display: inline-block;
+    width: 85%;
+}
+
+.deleteLink{
+    display: inline-block;
+    width: 5%;
+}

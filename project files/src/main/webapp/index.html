@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>LMS系统</title>
+    <link rel="stylesheet" href="pure-release-1.0.0/pure.css">
+    <link rel="stylesheet" href="ProjectCSS.css">
+    <script type="text/javascript" src="myFunction/getConfig.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <div class="mainContent">
+        <h1>电子学习系统</h1>
+        <form class="pure-form pure-form-aligned">
+            <fieldset>
+                <legend>系统登录</legend>
+                <div class="pure-control-group">
+                    <label for="username">用户名：</label>
+                    <input id="username" type="text" required>
+                </div>
+                <div class="pure-control-group">
+                    <label for="password">密码：</label>
+                    <input id="password" type="password">
+                </div>
+                <div class="pure-control-group">
+                    <label for="role">身份：</label>
+                    <select id="role" style="padding: 0 0.6em">
+                        <option>学生</option>
+                        <option>教师</option>
+<!--                        <option>管理员</option>-->
+                    </select>
+                </div>
+                <div class="pure-controls">
+                    <button type="submit" class="pure-button pure-button-primary" onclick="login();return false;">登录</button>
+                    <button type="submit" class="pure-button" onclick="moveToRegister()">注册</button>
+                </div>
+                <p id="message"></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
